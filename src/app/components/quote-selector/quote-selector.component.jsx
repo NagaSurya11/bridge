@@ -102,8 +102,8 @@ function QuoteSelectorComponent() {
      */
     function search(value, tokens) {
         setSearchText(value);
-        setFilteredTokens([...tokens].filter((token => token.address.toLowerCase().includes(value)
-            || token.name.toLowerCase().includes(value))));
+        setFilteredTokens([...tokens].filter((token => token?.address?.toLowerCase()?.includes(value)
+            || token?.name?.toLowerCase()?.includes(value))));
     }
 
     function navigateToQT() {

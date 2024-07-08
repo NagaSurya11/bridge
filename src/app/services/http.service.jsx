@@ -2,7 +2,7 @@ import axios from "axios";
 import Response from "../utils/classes/response.class";
 import { StatusCodes } from "http-status-codes";
 
-const baseURL = 'http://localhost:3000/api/';
+const baseURL = import.meta.env.VITE_BE_API_URL;
 
 /**
  *
