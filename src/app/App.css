@@ -45,3 +45,13 @@
     grid-template-rows: repeat(12, 1fr);
     row-gap: 1%;
 }
+
+@media (max-width: 450px) {
+    .main>.header>.logo {
+        width: 7rem;
+    }
+
+    .main>.dashboard>.cd-main>.container {
+        width: 90%;
+    }
+}
