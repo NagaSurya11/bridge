@@ -91,6 +91,8 @@ function QuoteSelectorComponent() {
         setLoading(true);
         setExpanded(false);
         const data = await BridgeRepository.getTokenData(value, getChainNameFromChainId(value));
+        if (data.length == 0)
+            dispatch(actions.SHOW_ALERT({severity: 'error', message: 'Try with different Data!'}));
         setTokens(data);
         search(searchText, data);
         setLoading(false);

@@ -15,6 +15,12 @@ export const SelectToken = {
     'chainList': []
 }
 
+export const Toaster = {
+    open: false,
+    severity: 'success',
+    message: 'message'
+}
+
 /**
  * @type {Array<Chain>}
  */

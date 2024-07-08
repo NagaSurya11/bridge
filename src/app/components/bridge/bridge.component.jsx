@@ -111,6 +111,7 @@ function BridgeComponent() {
             setGasFee(obj.bridgeFee);
             setNoOfSwaps(obj.transactionCounts);
         } else {
+            dispatch(actions.SHOW_ALERT({severity: 'error', message: 'Try with different Data!'}));
             resetData();
         }
         setLoading(false);

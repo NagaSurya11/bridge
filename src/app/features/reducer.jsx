@@ -1,17 +1,19 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { Chains, QuoteTransfer, SelectToken } from "./state";
-import { CommonActions, QuoteTransferActions } from "./actions";
+import { Chains, QuoteTransfer, SelectToken, Toaster } from "./state";
+import { CommonActions, QuoteTransferActions, ToasterActions } from "./actions";
 
 const SAR = createSlice({
     name: 'ACTION',
     initialState: {
         QuoteTransfer,
         SelectToken,
-        Chains
+        Chains,
+        Toaster
     },
     reducers: {
         ...CommonActions,
-        ...QuoteTransferActions
+        ...QuoteTransferActions,
+        ...ToasterActions
     }
 });
 

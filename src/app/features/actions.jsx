@@ -29,3 +29,15 @@ export const QuoteTransferActions = {
         }
     }
 }
+
+
+export const ToasterActions = {
+    'SHOW_ALERT': (state, action) => {
+        state.Toaster.open = true;
+        state.Toaster.severity = action.payload.severity;
+        state.Toaster.message = action.payload.message;
+    },
+    'CLOSE_ALERT': (state) => {
+        state.Toaster.open = false;
+    }
+}

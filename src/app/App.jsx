@@ -4,6 +4,7 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import routes from './utils/constants/routes.constant';
 import Logo from '../assets/icons/logo.jpg';
+import ToasterComponent from './components/toaster/toaster.component';
 
 
 const App = () => {
@@ -26,6 +27,7 @@ const App = () => {
           </Box>
         </Box>
       </Box>
+      <ToasterComponent />
     </Box>
   );
 };
