@@ -19,6 +19,6 @@ app.use(express.static(path.join(__dirname, 'dist')));
 app.get('*', function (req, res) {
   res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
-app.listen(3000, '127.0.0.1', () => {
-    console.log(`App Running On ${'http://127.0.0.1:3000'}`);
+app.listen(3000, () => {
+    console.log(`App Running On ${'http://localhost:3000'}`);
 });
