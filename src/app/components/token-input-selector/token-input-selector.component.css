@@ -1,0 +1,78 @@
+.token-amount-details {
+    display: grid;
+    grid-template-columns: 1.8fr 1fr;
+    background: var(--color-background-grey);
+    padding: 2.3%;
+    border-radius: .7rem;
+    column-gap: 2%;
+}
+
+.token-amount-details>.amount-details {
+    display: grid;
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+    background: var(--color-background-grey);
+}
+
+.token-amount-details>.amount-details>.label {
+    font-size: smaller;
+    color: #c6ccd2;
+}
+
+.token-amount-details>.amount-details>.input>.MuiInputBase-root {
+    height: 100%;
+    /* font-family: var(--font-family-regular) !important; */
+}
+.token-amount-details>.amount-details>.input>.MuiInputBase-root>.MuiInputBase-input {
+    padding: 0;
+    height: 100%;
+    font-size: x-large;
+    font-weight: bold;
+}
+.token-amount-details>.amount-details>.input>.MuiInputBase-root>input[type=number]::-webkit-inner-spin-button,
+.token-amount-details>.amount-details>.input>.MuiInputBase-root>input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.token-amount-details>.amount-details>.input>.MuiInputBase-root>.MuiOutlinedInput-notchedOutline {
+    border: none;
+}
+
+.token-amount-details>.amount-details>.in-doller {
+    font-size: x-small;
+    color: #8d98a5;
+}
+
+.token-amount-details>.token-button {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    place-content: center;
+    background: #24292e;
+    border-radius: .7rem;
+    cursor: pointer;
+    max-width: 11.9rem;
+}
+
+.token-amount-details>.token-button>.token-image {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.1rem;
+}
+
+.token-amount-details>.token-button>.token-detail {
+    display: flex;
+    flex-direction: column;
+}
+
+.token-amount-details>.token-button>.token-detail>.token-name {
+    font-size: medium;
+    font-weight: bolder;
+}
+
+.token-amount-details>.token-button>.token-detail>.chain-name {
+    font-size: smaller;
+    color: #c6ccd2;
+}
+
+

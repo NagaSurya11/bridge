@@ -1,0 +1,27 @@
+.list>.list-item {
+    cursor: pointer;
+}
+
+.list>.list-item:hover,
+.list>.MuiListItem-container:hover {
+    border-left: 1px solid var(--color-white);
+    background-color: var(--color-grey);
+}
+
+.list>.list-item.selected,
+.list>.list-item.selected>.list-item-icon,
+.list>.MuiListItem-container>.selected,
+.list>.MuiListItem-container>.selected>.list-item-icon,
+.list>.MuiListItem-container>.selected+.list-item-icon {
+    color: var(--color-blue);
+}
+
+.list>.list-item.selected,
+.list>.MuiListItem-container>.selected {
+    border-left: 1px solid var(--color-blue);
+}
+
+.list>.skeleton {
+    height: 5vw;
+    margin: 0.3rem;
+}

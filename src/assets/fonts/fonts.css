@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'font-family-regular';
+    src: url('./IBMPlexSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'font-family-bold';
+    src: url('./IBMPlexSans-Regular.ttf');
+}

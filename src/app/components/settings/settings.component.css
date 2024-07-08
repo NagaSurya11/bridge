@@ -1,0 +1,46 @@
+.st-header{
+    grid-row: 1 / span 1;
+    display: flex;
+    /* place-content: center; */
+    place-items: center;
+    font-size: larger;
+    font-weight: bolder;
+    column-gap: 3%;
+}
+
+.st-header>.icon-button {
+    background: rgb(36 41 46);
+    border-radius: 28%;
+}
+
+.st-main {
+    grid-row: 3 / span 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.st-main>.header {
+    font-size: large;
+}
+
+.st-main>.content {
+    font-size: small;
+    color: var(--color-label);
+}
+
+.st-main>.MuiButtonGroup-root {
+    display: flex;
+    place-content: center;
+    place-items: center;
+}
+.st-main>.MuiButtonGroup-root>.MuiButtonBase-root {
+    width: -webkit-fill-available;
+}
+
+.st-main>.MuiButtonGroup-root>.MuiButtonBase-root.selected {
+    text-decoration: none;
+    background-color: rgba(144, 202, 249, 0.08);
+    border: 1px solid rgb(144, 202, 249);
+}
+

@@ -1,0 +1,18 @@
+@import url('./assets/fonts/fonts.css');
+
+:root {
+    --color-grey: #ffffff26;
+    --color-blue: rgb(51, 153, 255);
+    --color-white: #fff;
+    --color-light-black: #14171a;
+    --color-label: #c6ccd2;
+    --color-background-grey: #1b1f22;
+
+    /* fonts */
+    --font-family-regular: 'font-family-regular', san-serif;
+    --font-family-bold: 'font-family-bold', san-serif;
+  }
+
+* {
+    font-family: var(--font-family-regular);
+}
